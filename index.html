@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandan Niaga Sdn Bhd</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll); // Trigger on page load too
+</script>
+
+</head>
+<body>
+<nav>
+  <div class="nav-container">
+    <h2 class="nav-logo">PNSB</h2>
+    <div class="nav-toggle" id="navToggle">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">About us</a>
+      <a href="product.html">Product</a>
+      <a href="sponsorship.html">Our Principle</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+  <header class="bg">
+    <h1>Pandan Niaga Sdn. Bhd.</h1>
+    <p>Specialized equipment and gear for professional firefighters.</p>
+  </header>
+
+  <section id="history">
+    <h2 class="reveal">Introduction</h2>
+    <p>Pandan Niaga Sdn. Bhd. (PNSB) is a company establish on 5
+th November 1996. The Company had commenced its business
+operation in supplying office supplies and equipment to Government and SemiGovernment agencies in November 1996.
+</p>
+<p>PNSB is a wholly owned by bumiputras and have been registered with the Ministry
+of Finance since March 2001.</p>
+<p>PNSB has diversified its business activities to supplying fire, rescue and safety
+equipment since 1996 to the Government as well as the Private Sector and and is
+registered with Ministry of Finance under the following categories:-</p>
+<ul>
+  <li>Municipal and Military Fire and Rescues Services</li>
+  <li>Airport and Port Fire and Rescue Services</li>
+  <li>Fire Fighting Equipment and System</li>
+  <li>Personal Protective Equipment (PPE) and Related Items</li>
+</ul>
+
+<h2 class="reveal">Company's Mission</h2>
+<p>Pandan Niaga Sdn. Bhd. (PNSB) aims to participate in the development of the
+country to achieve the status of an industrialized nation. PNSB has shown that the
+company is capable and competent to developed and grow with the development
+of the country.
+</p>
+<p>The company’s mission are as follows:-</p>
+  <ul>
+    <li>
+      <span class="title">CARE</span><br>
+      <span>we care to maintain professional integrity and we listen and focus on our client’s requirements</span>
+    </li>
+    <li>
+      <span class="title">RESPOND</span><br>
+      <span>we respond to client’s problem with definite solutions</span>
+    </li>
+    <li>
+      <span class="title">DELIVER</span><br>
+      <span>we deliver goods and services to customer based on their cost requirements</span>
+    </li>
+    <li>
+      <span class="title">GUARANTEE</span><br>
+      <span>we guarantee to give levels of excellence on our goods and services</span>
+    </li>
+  </ul>
+
+  </section>
+
+  <footer>
+    <h2>Contact & Customer Service</h2>
+    <p><strong>Phone:</strong> +603-5122 1310</p>
+    <p><strong>Email:</strong> pnsb@pn.com.my</p>
+    <p><strong>Customer Service Hours:</strong> Monday - Friday, 9:00 AM to 5:00 PM</p>
+    <p>&copy; 2025 FireGuard Solutions. All rights reserved.</p>
+  </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

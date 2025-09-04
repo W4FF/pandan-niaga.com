@@ -1,0 +1,487 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('rubik/Rubik-Medium.ttf') format('truetype');
+  width: 100px;
+  height: 100px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General layout */
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* Container for nav content */
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #b22222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Hide toggle by default */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Nav links in a row by default */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;  
+}
+
+nav a:hover {
+  background-color: #800000;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.nav-links:hover{
+  background-color: #800000;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Section spacing */
+section {
+  padding: 10px 20px 60px;
+}
+
+/* Hero Header */
+header.bg {
+  background: url("PICTURE/WEBSITE/Pandan Picture/pnsb4.JPG") center/cover no-repeat;
+  color: #f4f2f2;
+  position: relative;
+  text-align: center;
+  padding: 200px 20px 100px;
+}
+
+header.bg::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,0.5) 100%);
+  filter: blur(8px);
+  z-index: 0;
+}
+
+header.hero h1,
+header.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.title {
+  color: #b22222;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+/* Highlight Panels */
+.highlight {
+  background-color: #ffffff;
+  border-left: 5px solid #b22222;
+  padding: 15px 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 0.95em;
+  margin-top: 40px;
+}
+
+/* Contact Form */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #b22222;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #800000;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;         /* centers each item in its grid cell */
+  align-items: start;
+  justify-content: center;       /* centers the entire grid */
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 180px;
+  height: 200px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+/* Product Details */
+.details {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.details img {
+  width: 350px;               /* same width for all */
+  height: 350px;              /* same height for all */
+  object-fit: contain;        /* show full image, no cropping */
+  background-color: #fff;     /* fill blank areas */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+}
+
+
+
+.details .info {
+  flex: 1 1 100px;
+}
+
+.specs {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+@media (max-width: 680px) {
+  .details {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* Product Note Bar */
+.product-note {
+  background: #fff;
+  border-top: 4px solid #b22222;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+
+/* Principle Cards */
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.principle-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.principle-card:hover {
+  transform: translateY(-4px);
+}
+
+.principle-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* === YOUR EXISTING CSS — no changes needed above this point === */
+
+/* === RESPONSIVE DESIGN FOR TABLETS & PHONES === */
+@media (max-width: 1024px) {
+.nav-toggle {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #b22222;
+    position: absolute;
+    top: 60px; /* height of the nav */
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  nav a {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+  header.bg {
+    padding: 150px 15px 80px;
+  }
+
+  .product-grid {
+    display: grid; /* Fixes display issue */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .details img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .details .info {
+    flex: 1 1 auto;
+    padding: 0 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery img {
+    border-radius: 6px;
+  }
+
+  .principle-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .principle-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Keep images square */
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: block;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 30px 15px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    max-width: 100%;
+    font-size: 1em;
+  }
+
+  .product-note {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  header.bg {
+    padding: 100px 10px 60px;
+    text-align: center;
+  }
+
+  .highlight {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .modal-content {
+    max-width: 90%;
+    max-height: 70%;
+  }
+
+  .close {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+  }
+}
