@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Rubik';
-  src: url('rubik/Rubik-Medium.ttf') format('truetype');
+  src: url('rubik/Rubik-Medium.woff2') format('woff2'),
+       url('rubik/Rubik-Medium.woff') format('woff'),
+       url('rubik/Rubik-Medium.ttf') format('truetype');
   width: 100px;
   height: 100px;
   font-weight: normal;
@@ -9,7 +11,7 @@
 
 /* General layout */
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Helvetica, sans-serif, Arial;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
