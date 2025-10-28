@@ -3,15 +3,14 @@
   src: url('rubik/Rubik-Medium.woff2') format('woff2'),
        url('rubik/Rubik-Medium.woff') format('woff'),
        url('rubik/Rubik-Medium.ttf') format('truetype');
-  width: 100px;
-  height: 100px;
+
   font-weight: normal;
   font-style: normal;
 }
 
 /* General layout */
 body {
-  font-family: 'Rubik', Helvetica, sans-serif, Arial;
+  font-family: 'Rubik', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -85,7 +84,10 @@ nav a:hover {
 
 /* Section spacing */
 section {
-  padding: 10px 20px 60px;
+  padding: 10px 20px 60px;  /* Keep this padding for spacing */
+  max-width: 1100px;        /* Add this to match your nav */
+  margin-left: auto;        /* Add this to center the section */
+  margin-right: auto;       /* Add this to center the section */
 }
 
 /* Hero Header */
