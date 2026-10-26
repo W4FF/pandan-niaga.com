@@ -3,86 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fire Pump</title>
+  <meta name="theme-color" content="#171a1d">
+  <title>Fire Pumps | Pandan Niaga Sdn. Bhd.</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    main { max-width: 1000px; margin: 120px auto 40px; padding: 0 20px; }
-    .back-btn { display:inline-block; margin-bottom:20px; color:#b22222; text-decoration:none; }
-    .back-btn:hover { text-decoration:underline; }
-    .details { display:flex; flex-wrap:wrap; gap:40px; }
-    .details img { max-width:450px; flex:1 1 350px; border-radius:8px; }
-    .info { flex:1 1 300px; }
-    .specs { margin-top:20px; list-style:disc inside; }
-  </style>
 </head>
-<body>
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</nav>
-
- <main>
-    <a href="product.html" class="back-btn">&larr; Back to Products</a>
-
-    <section>    
-    <div class="details">
-      <img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="Fire Pump">
-      <div class="info">
-        <a href="https://www.godiva.co.uk/powerflow-8-5-twin-discharge-1" target="_blank" rel="noopener noreferrer"><h1>GODIVA GP 8/5</h1></a>
-        <p>Compact and lightweight portable fire pump with a rated performance of 800l/min at 5 bar of pressure with a 3 metre lift.. Powered by 18HP Briggs and Stratton engine, this pump uses twin discharge valves and is available with exhaust priming system, electric or manual starting.</p>
-        </ul>  
+<body class="catalog-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About us</a><a href="product.html" aria-current="page">Product</a><a href="sponsorship.html">Our Principle</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
       </div>
     </div>
-
-    <div class="details">
-      <img src="PICTURE/GODIVA/godiva_blazewarrior10-10_iso2.png" alt="Thermal Imaging Camera">
-      <div class="info">
-        <a href="https://www.godiva.co.uk/blaze-warrior-10-10" target="_blank" rel="noopener noreferrer"><h1>GODIVA Blaze Warrrior 10/10</h1></a>
-        <p>Meet the Blaze Warrior 10/10 — the latest breakthrough from Godiva, engineered for the evolving demands of today’s firefighting and emergency services.
-
-This ultra-lightweight, high performance portable pump delivers an impressive 1000 L/min at 10 bar, fully compliant with EN1028 / PFPN10-1000 standards — all in a compact design that’s significantly smaller, lighter and more compact than comparable units.
-
-Built for rapid deployment and reliable operation in high-pressure situations, the Blaze Warrior 10/10 features an advanced cooling system for uninterrupted performance, together with optimised ergonomics for effortless transport and storage.</p> 
-      </div>
-    </div>
-
-    <div class="details">
-      <img src="PICTURE/GODIVA/godiva_kp2_iso_view_b_rgb.jpg" alt="Thermal Imaging Camera">
-      <div class="info">
-        <a href="https://www.godiva.co.uk/vehicle-mounted-pumps/kp-11" target="_blank" rel="noopener noreferrer"><h1>GODIVA KP Pump</h1></a>
-        <p>The Godiva KP series of rear or midship mounted PTO driven centrifugal fire pumps offers the ultimate in unrivalled performance up to 1500 LPM because only the KP offers both a single-pressure and a multi-pressure option, reduced whole life cost of ownership, is easily installed and maintained all in the smallest, lightest package in the market. Bronze option available.</p>
- 
-      </div>
-    </div>
-
-    <div class="details">
-      <img src="PICTURE/GODIVA/prima_front_3.jpg" alt="Thermal Imaging Camera">
-      <div class="info">
-        <a href="https://www.godiva.co.uk/vehicle-mounted-pumps/prima-p2-2010-1" target="_blank" rel="noopener noreferrer"><h1>GODIVA Prima Pump</h1></a>
-        <p>Godiva’s Prima P2 multi-pressure light alloy pump is designed for midship and rear mounted pumps. Designed utilizing enhanced material selection ensures long life and reliability. Incorporated features aide in maintenance and reduce whole life costs. Bronze option available.</p> 
-      </div>
-    </div>
-
-  </section>
-
+  </nav>
+  <main class="detail-main">
+    <a class="detail-back" href="product.html"><span aria-hidden="true">←</span> All equipment</a>
+    <header class="detail-hero">
+      <div><p class="catalog-eyebrow"><span></span> Equipment guide / 01</p><h1>Fire<br><em>pumps.</em></h1><p>Explore portable and vehicle-mounted Godiva pump options, from compact portable units to larger pump systems.</p><a class="detail-hero-cta" href="#products">Explore the range <span aria-hidden="true">↓</span></a></div>
+      <img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="Godiva GP 8/5 portable fire pump">
+    </header>
+    <section class="detail-list" id="products">
+      <div class="detail-list-heading"><div><p class="catalog-eyebrow catalog-eyebrow--dark"><span></span> Pump range</p><h2>Choose a pump to explore.</h2></div><span>04 PRODUCTS</span></div>
+      <article class="detail-product">
+        <div class="detail-product-image"><img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="GODIVA GP 8/5 portable fire pump"></div>
+        <div class="detail-product-copy"><span class="detail-product-label">01 / PORTABLE</span><h3>GODIVA GP 8/5</h3><p>Compact, lightweight portable fire pump rated at 800 L/min at 5 bar with a 3 metre lift. Powered by an 18 HP Briggs &amp; Stratton engine, with twin discharge valves and manual or electric starting options.</p><a class="detail-manufacturer" href="https://www.godiva.co.uk/powerflow-8-5-twin-discharge-1" target="_blank" rel="noopener noreferrer">View manufacturer details <span aria-hidden="true">↗</span></a><a class="detail-enquire" href="mailto:pnsb@pn.com.my?subject=Enquiry%20about%20GODIVA%20GP%208%2F5">Enquire about this pump <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="detail-product">
+        <div class="detail-product-image"><img src="PICTURE/GODIVA/godiva_blazewarrior10-10_iso2.png" alt="GODIVA Blaze Warrior 10/10 portable fire pump"></div>
+        <div class="detail-product-copy"><span class="detail-product-label">02 / PORTABLE</span><h3>GODIVA Blaze Warrior 10/10</h3><p>Portable pump delivering 1,000 L/min at 10 bar. Its compact design includes a cooling system and transport-focused ergonomics, and the model is described as compliant with EN 1028 / PFPN 10-1000.</p><a class="detail-manufacturer" href="https://www.godiva.co.uk/blaze-warrior-10-10" target="_blank" rel="noopener noreferrer">View manufacturer details <span aria-hidden="true">↗</span></a><a class="detail-enquire" href="mailto:pnsb@pn.com.my?subject=Enquiry%20about%20GODIVA%20Blaze%20Warrior%2010%2F10">Enquire about this pump <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="detail-product">
+        <div class="detail-product-image"><img src="PICTURE/GODIVA/godiva_kp2_iso_view_b_rgb.jpg" alt="GODIVA KP vehicle-mounted fire pump"></div>
+        <div class="detail-product-copy"><span class="detail-product-label">03 / VEHICLE-MOUNTED</span><h3>GODIVA KP Pump</h3><p>Rear- or midship-mounted PTO-driven centrifugal pump series. The range offers single- and multi-pressure options, with performance up to 1,500 L/min.</p><a class="detail-manufacturer" href="https://www.godiva.co.uk/vehicle-mounted-pumps/kp-11" target="_blank" rel="noopener noreferrer">View manufacturer details <span aria-hidden="true">↗</span></a><a class="detail-enquire" href="mailto:pnsb@pn.com.my?subject=Enquiry%20about%20GODIVA%20KP%20Pump">Enquire about this pump <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="detail-product">
+        <div class="detail-product-image"><img src="PICTURE/GODIVA/prima_front_3.jpg" alt="GODIVA Prima P2 vehicle-mounted fire pump"></div>
+        <div class="detail-product-copy"><span class="detail-product-label">04 / VEHICLE-MOUNTED</span><h3>GODIVA Prima Pump</h3><p>The Prima P2 multi-pressure light-alloy pump is designed for midship and rear mounting. Its design focuses on long service life, reliability and maintenance.</p><a class="detail-manufacturer" href="https://www.godiva.co.uk/vehicle-mounted-pumps/prima-p2-2010-1" target="_blank" rel="noopener noreferrer">View manufacturer details <span aria-hidden="true">↗</span></a><a class="detail-enquire" href="mailto:pnsb@pn.com.my?subject=Enquiry%20about%20GODIVA%20Prima%20Pump">Enquire about this pump <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </section>
+    <section class="detail-next"><p>Looking for another kind of equipment?</p><a href="product.html">Browse all categories <span aria-hidden="true">↗</span></a></section>
   </main>
-  
-  <footer>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> +603-5122 1310</p>
-    <p><strong>Email:</strong> pnsb@pn.com.my</p>
-    <p>&copy; Pandan Niaga Sdn. Bhd.</p>
-  </footer>
-
-    <script src="javascript/script.js"></script>
+  <footer><h2>Contact</h2><p><strong>Phone:</strong> +603-5122 1310</p><p><strong>Email:</strong> pnsb@pn.com.my</p><p>&copy; Pandan Niaga Sdn. Bhd.</p></footer>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

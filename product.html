@@ -1,82 +1,104 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Product</title>
-     <!-- External CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171a1d">
+  <title>Fire &amp; Rescue Equipment | Pandan Niaga Sdn. Bhd.</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+<body class="catalog-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About us</a>
+        <a href="product.html" aria-current="page">Product</a>
+        <a href="sponsorship.html">Our Principle</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <header class="bg">
-    <h1>Pandan Niaga Sdn. Bhd.</h1>
-    <p>Specialized equipment and gear for professional firefighters.</p>
-  </header>  
+  <main>
+    <header class="catalog-hero">
+      <div class="catalog-hero-copy">
+        <p class="catalog-eyebrow"><span></span> Fire · Rescue · Response</p>
+        <h1>Gear up for<br><em>what matters.</em></h1>
+        <p>Explore equipment for firefighting and rescue operations. Browse by category to learn more about the products we supply.</p>
+        <a class="catalog-hero-link" href="#equipment">Explore equipment <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="catalog-hero-image">
+        <img src="PICTURE/WEBSITE/Pandan Picture/pnsb4.JPG" alt="Firefighting equipment demonstration at an industrial site">
+        <span class="catalog-image-caption"><span></span> EQUIPMENT IN ACTION</span>
+      </div>
+      <div class="catalog-hero-footer"><span>TOOLS FOR THE FRONT LINE</span><span>PANDAN NIAGA · EST. 1996</span></div>
+    </header>
 
- <section id="products">
-    <h2>Our Products</h2>
+    <section class="catalog-section" id="equipment">
+      <div class="catalog-heading">
+        <div>
+          <p class="catalog-eyebrow catalog-eyebrow--dark"><span></span> Explore our range</p>
+          <h2>Find your equipment.</h2>
+          <p>Choose a category or search for a product to see the details.</p>
+        </div>
+        <label class="catalog-search">
+          <span class="catalog-search-icon" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search equipment</span>
+          <input id="productSearch" type="search" placeholder="Search equipment…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+      </div>
 
-  <div class="product-grid">
+      <div class="catalog-filters" role="group" aria-label="Filter equipment by category">
+        <button type="button" class="catalog-filter is-active" data-filter="all" aria-pressed="true">All equipment <span>06</span></button>
+        <button type="button" class="catalog-filter" data-filter="suppression" aria-pressed="false">Fire suppression <span>04</span></button>
+        <button type="button" class="catalog-filter" data-filter="rescue" aria-pressed="false">Rescue &amp; access <span>02</span></button>
+      </div>
 
-    <a href="fire_pump.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="Fire Pump">
-      <h3>Fire Pump</h3>
-    </div>
-      </a>
+      <p class="catalog-result-count" id="productResults" aria-live="polite">Showing 6 equipment categories</p>
+      <div class="catalog-grid">
+        <a href="fire_pump.html" class="catalog-card" data-category="suppression" data-search="fire pump godiva gp 8/5 blaze warrior 10/10 kp prima portable vehicle mounted water">
+          <span class="catalog-card-index">01 / WATER SUPPLY</span>
+          <div class="catalog-card-image"><img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="Godiva portable fire pump"></div>
+          <div class="catalog-card-info"><div><h3>Fire pumps</h3><p>Portable and vehicle-mounted pump options.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="firefighting_nozzle.html" class="catalog-card" data-category="suppression" data-search="firefighting nozzle akron saberjet turbojet provenger hose stream selectable flow">
+          <span class="catalog-card-index">02 / HANDLINE</span>
+          <div class="catalog-card-image"><img src="PICTURE/AKRON/saberjet/2.jpg" alt="AKRON SaberJet firefighting nozzle"></div>
+          <div class="catalog-card-info"><div><h3>Firefighting nozzles</h3><p>Explore selectable and multi-purpose nozzle designs.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="fire_monitor.html" class="catalog-card" data-category="suppression" data-search="fire monitor akron mercury quick attack quick le streammaster ii portable electric 500 gpm 1250 gpm">
+          <span class="catalog-card-index">03 / WATER DELIVERY</span>
+          <div class="catalog-card-image"><img src="PICTURE/AKRON/Portable Monitor MErcury Attack/3.jpg" alt="AKRON Mercury Attack portable monitor"></div>
+          <div class="catalog-card-info"><div><h3>Fire monitors</h3><p>Portable and electric monitor options.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="Foam.html" class="catalog-card" data-category="suppression" data-search="firefighting foam national foam universal f3 green concentrate foam chamber remote control manual monitor">
+          <span class="catalog-card-index">04 / FOAM SYSTEMS</span>
+          <div class="catalog-card-image"><img src="PICTURE/NATIONAL FOAM/REC 2.jpg" alt="National Foam remote control manual monitor"></div>
+          <div class="catalog-card-info"><div><h3>Foam &amp; equipment</h3><p>Concentrates and fixed or remote discharge equipment.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="rescue_equipment.html" class="catalog-card" data-category="rescue" data-search="rescue equipment holmatro pentheon hydraulic tools omnishore shoring stabilization breaching cutter">
+          <span class="catalog-card-index">05 / RESCUE TOOLS</span>
+          <div class="catalog-card-image"><img src="PICTURE/HolmATRO/CUTTER/cutter.jpg" alt="Holmatro rescue cutter"></div>
+          <div class="catalog-card-info"><div><h3>Rescue equipment</h3><p>Rescue tools, shoring and breaching equipment.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="Fire_Ladder.html" class="catalog-card" data-category="rescue" data-search="fire ladder extension triple ladder tx as fire safety beam gantry shutter access vehicle">
+          <span class="catalog-card-index">06 / ACCESS</span>
+          <div class="catalog-card-image"><img src="PICTURE/SUPLLYPLUS/ladder.jpg" alt="Fire and rescue extension ladder"></div>
+          <div class="catalog-card-info"><div><h3>Ladders &amp; access</h3><p>Fire service ladders and vehicle access equipment.</p></div><span class="catalog-card-arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div>
+      <p class="catalog-empty" id="productEmpty" hidden>No categories match that search. Try a different term.</p>
+    </section>
 
-    <a href="firefighting_nozzle.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/AKRON/saberjet/2.jpg" alt="Firefighting Nozzle">
-      <h3>Firefighting Nozzle</h3>
-    </div>
-      </a>
-
-    <a href="fire_monitor.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/AKRON/Portable Monitor MErcury Attack/1.png" alt="Fire Monitor">
-      <h3>Fire Monitor</h3>
-    </div>
-      </a>
- 
-
-     <a href="rescue_equipment.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/HolmATRO/COMBI TOOL/3.jpg" alt="Rescue Equipment">
-      <h3>Rescue Equipment</h3>
-    </div>
-      </a>
-
-    <a href="Fire_Ladder.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/SUPLLYPLUS/ladder.jpg" alt="Fire Ladder">
-      <h3>Fire Ladder</h3>
-    </div>
-      </a>  
-
-    <a href="Foam.html" class="product-card-link">
-    <div class="product-card">
-      <img src="PICTURE/NATIONAL FOAM/REC 2.jpg" alt="Fire Ladder">
-      <h3>Firefighting Foam & Equipment</h3>
-    </div>
-      </a>      
-    </div>  
-    
-    
- </section>
+    <section class="catalog-contact">
+      <div><p class="catalog-eyebrow"><span></span> Need help narrowing it down?</p><h2>Tell us about the job.</h2><p>Our team can help you explore the available equipment options.</p></div>
+      <a href="contact.html" class="catalog-contact-link">Talk to our team <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
   <footer>
     <h2>Contact</h2>
@@ -84,7 +106,6 @@
     <p><strong>Email:</strong> pnsb@pn.com.my</p>
     <p>&copy; Pandan Niaga Sdn. Bhd.</p>
   </footer>
-  
-    <script src="javascript/script.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

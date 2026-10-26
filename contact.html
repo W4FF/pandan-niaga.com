@@ -2,56 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171a1d" />
+  <title>Contact | Pandan Niaga Sdn. Bhd.</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+<body class="contact-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About us</a>
+        <a href="product.html">Product</a>
+        <a href="sponsorship.html">Our Principle</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
-
-    <header class="bg">
-    <h1>Pandan Niaga Sdn. Bhd.</h1>
-    <p>Specialized equipment and gear for professional firefighters.</p>
-  </header>
+  </nav>
 
   <main>
-    <section id="location">
-      <h3>Our Location</h3>
-      <a href="https://www.google.com/maps/dir//3.0221473,101.5442782/@3.0221442,101.4618762,12z?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer">
-        <p>NO. 81A, JALAN TABLA 33/21</p>
-        <p>SHAH ALAM TECHNOLOGY PARK</p>
-        <p>SECTION 33, 40400 SHAH ALAM</p>
-        <p>SELANGOR DARUL EHSAN</p>
-      </a>
+    <header class="contact-hero">
+      <div class="contact-hero-backdrop">
+        <img src="PICTURE/WEBSITE/Pandan Picture/IMG_7615.JPG" alt="Fire crew demonstrating foam equipment at an outdoor training site" />
+      </div>
+      <div class="contact-hero-inner">
+        <div class="contact-hero-copy">
+          <p class="contact-eyebrow"><span></span> Pandan Niaga · Fire &amp; rescue · Malaysia</p>
+          <h1>When every second counts, <em>start here.</em></h1>
+          <p class="contact-hero-description">The right equipment starts with the right conversation. Talk to our team about pumps, nozzles, rescue tools and more.</p>
+          <div class="contact-hero-actions">
+            <a class="contact-button contact-button--red" href="tel:+60351221310">
+              <span aria-hidden="true">↗</span> Call our office
+            </a>
+            <a class="contact-text-link" href="#enquiry">Tell us what you need <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="contact-hero-card" aria-label="Contact Pandan Niaga">
+          <div class="contact-hero-card-heading">
+            <span class="contact-hero-card-icon" aria-hidden="true">↗</span>
+            <span class="contact-hero-card-label">YOUR PNSB CONTACT DESK</span>
+          </div>
+          <p>Need a hand with your equipment?</p>
+          <a class="contact-hero-phone" href="tel:+60351221310">+603 5122 1310 <span aria-hidden="true">↗</span></a>
+          <a class="contact-hero-mobile" href="tel:+60192889575">Or call Wan Mohd Fadzil<br /><strong>+6019 288 9575</strong></a>
+          <a class="contact-hero-email" href="mailto:pnsb@pn.com.my">Email our team <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+      <div class="contact-hero-bottom"><span>HERE FOR THE PEOPLE WHO RESPOND</span><a href="#location">SHAH ALAM, SELANGOR <span aria-hidden="true">↘</span></a></div>
+    </header>
+
+    <section class="contact-enquiry" id="enquiry">
+      <div class="contact-section-heading">
+        <p class="contact-eyebrow contact-eyebrow--dark"><span></span> Let’s get to work</p>
+        <h2>What are you looking for?</h2>
+        <p>Choose a product area and we’ll help you start the conversation.</p>
+      </div>
+      <div class="contact-enquiry-panel">
+        <div class="contact-enquiry-prompt">
+          <span class="contact-step">01 <span>/ 01</span></span>
+          <label for="productInterest">I’m interested in…</label>
+          <select id="productInterest" name="productInterest">
+            <option value="Fire pumps">Fire pumps</option>
+            <option value="Firefighting nozzles">Firefighting nozzles</option>
+            <option value="Fire monitors">Fire monitors</option>
+            <option value="Rescue equipment">Rescue equipment</option>
+            <option value="Fire ladders">Fire ladders</option>
+            <option value="Firefighting foam and equipment">Firefighting foam &amp; equipment</option>
+            <option value="Other fire and rescue equipment">Something else</option>
+          </select>
+        </div>
+        <div class="contact-enquiry-action">
+          <p id="enquiryPreview" aria-live="polite">We’ll connect you with the right people for fire pumps.</p>
+          <a class="contact-button contact-button--dark" id="enquiryLink" href="mailto:pnsb@pn.com.my?subject=Enquiry%20about%20fire%20pumps">
+            Email your enquiry <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <p class="contact-enquiry-note">Your email app will open with the product area in the subject. No message is sent until you choose to send it.</p>
     </section>
 
-    <section id="contact-info">
-      <h3>Our Contact</h3>
-      <p><strong>Office:</strong> +603-5122 1310</p>
-      <p><strong>Wan Mohd Fadzil Bin Wan Abas:</strong> +6019-288 9575</p>
+    <section class="contact-details">
+      <div class="contact-details-heading">
+        <p class="contact-eyebrow contact-eyebrow--dark"><span></span> Here when you need us</p>
+        <h2>Real people.<br /><em>Ready to help.</em></h2>
+      </div>
+      <div class="contact-detail-cards">
+        <article class="contact-detail-card">
+          <span class="contact-card-number">01 / CALL</span>
+          <span class="contact-card-icon" aria-hidden="true">↗</span>
+          <h3>Talk to our team</h3>
+          <p>Call the office or reach our contact directly.</p>
+          <a href="tel:+60351221310">+603 5122 1310 <span aria-hidden="true">↗</span></a>
+          <a class="contact-secondary-link" href="tel:+60192889575">Wan Mohd Fadzil · +6019 288 9575</a>
+        </article>
+        <article class="contact-detail-card">
+          <span class="contact-card-number">02 / WRITE</span>
+          <span class="contact-card-icon" aria-hidden="true">↗</span>
+          <h3>Send us an email</h3>
+          <p>Tell us what your crew needs and we’ll take it from there.</p>
+          <a href="mailto:pnsb@pn.com.my">pnsb@pn.com.my <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="contact-detail-card">
+          <span class="contact-card-number">03 / VISIT</span>
+          <span class="contact-card-icon" aria-hidden="true">↗</span>
+          <h3>Come by our office</h3>
+          <p>Shah Alam Technology Park, Section 33, Selangor.</p>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3.0221473%2C101.5442782" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
     </section>
 
-
+    <section class="contact-location" id="location">
+      <div class="contact-location-copy">
+        <p class="contact-eyebrow"><span></span> Find us in Shah Alam</p>
+        <h2>Come see<br />where we work.</h2>
+        <address>
+          NO. 81A, JALAN TABLA 33/21<br />
+          SHAH ALAM TECHNOLOGY PARK<br />
+          SECTION 33, 40400 SHAH ALAM<br />
+          SELANGOR DARUL EHSAN
+        </address>
+        <a class="contact-button contact-button--red" href="https://www.google.com/maps/dir/?api=1&amp;destination=3.0221473%2C101.5442782" target="_blank" rel="noopener noreferrer">
+          Open directions <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="contact-map">
+        <iframe
+          title="Map showing Pandan Niaga's office in Shah Alam"
+          src="https://maps.google.com/maps?q=3.0221473,101.5442782&amp;z=15&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+        <div class="contact-map-label"><span aria-hidden="true">⌖</span> PANDAN NIAGA · SHAH ALAM</div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> +603-5122 1310</p>
-    <p><strong>Email:</strong> pnsb@pn.com.my</p>
-    <p>&copy; Pandan Niaga Sdn. Bhd.</p>
+  <footer class="contact-footer">
+    <div><span class="contact-footer-brand">PNSB<span>.</span></span><p>Equipment for the people who protect us.</p></div>
+    <div class="contact-footer-links"><a href="tel:+60351221310">+603 5122 1310</a><a href="mailto:pnsb@pn.com.my">pnsb@pn.com.my</a></div>
+    <p class="contact-copyright">&copy; Pandan Niaga Sdn. Bhd.</p>
   </footer>
 
   <script src="javascript/script.js"></script>

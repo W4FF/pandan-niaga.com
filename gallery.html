@@ -1,95 +1,67 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-     <!-- External CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171a1d">
+  <title>Gallery | Pandan Niaga Sdn. Bhd.</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+<body class="catalog-page gallery-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About us</a><a href="product.html">Product</a><a href="sponsorship.html">Our Principle</a><a href="gallery.html" aria-current="page">Gallery</a><a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
-
-  <header class="bg">
-    <h1>Pandan Niaga Sdn. Bhd.</h1>
-    <p>Specialized equipment and gear for professional firefighters.</p>
-  </header>  
-
-  <section class="gallery">
- 
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC01684.JPG" alt="fire rescue">
-  
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC05035.JPG">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/IMG_7615.JPG">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC05035.JPG">
- 
-      <img src="PICTURE/WEBSITE/Pandan Picture/20150427_091058.jpg">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/20150504_161933.jpg">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/20150812_103805.jpg">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/20160509_120327.jpg">
-
-      <img src="new picture/20150617_125726.jpg">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC01670.JPG">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC02059.JPG">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/SSRI3344.JPG">
-
-      <img src="PICTURE/WEBSITE/Pandan Picture/DSC01503.JPG">
-
-      <img src="new picture/20150811_110316.jpg">
-
-      <img src="new picture/20150811_150733.jpg">
-
-      <img src="new picture/20160509_120330.jpg">
-
-      <img src="new picture/20160509_120415.jpg">
-
-      <img src="new picture/DSC00291.JPG">
-
-      <img src="new picture/DSC02306.JPG">
-
-      <img src="new picture/IMG_1153.JPG">
-
-      <img src="new picture/IMG_20130701_144955.jpg">
-
-      <img src="new picture/IMG_20161027_151219.jpg">
-
-      <img src="new picture/IMG_2415.JPG">
-
-      <img src="new picture/IMG_5524.JPG">
-  </section>
-
-  <!-- Modal for Enlarged Image -->
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="enlargedImg">
-</div>
-
-  <footer>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> +603-5122 1310</p>
-    <p><strong>Email:</strong> pnsb@pn.com.my</p>
-    <p>&copy; Pandan Niaga Sdn. Bhd.</p>
-  </footer>
-
+  </nav>
+  <main>
+    <header class="gallery-hero">
+      <p class="catalog-eyebrow"><span></span> Pandan Niaga / Photo archive</p>
+      <h1>A closer look at<br><em>what we do.</em></h1>
+      <p>Explore moments from our fire and rescue equipment archive. Select any image to view it larger.</p>
+      <a href="#gallery" class="gallery-hero-link">Browse the gallery <span aria-hidden="true">↓</span></a>
+      <span class="gallery-hero-mark" aria-hidden="true">PNSB<br />ARCHIVE</span>
+    </header>
+    <section class="gallery-section" id="gallery" aria-label="Pandan Niaga fire and rescue photo archive">
+      <div class="gallery-toolbar"><p><span id="galleryCount">23</span> PHOTOS</p><p>SELECT A PHOTO TO ENLARGE <span aria-hidden="true">↗</span></p></div>
+      <div class="gallery gallery-grid">
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/DSC01684.JPG" aria-label="View photo 1 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/DSC01684.JPG" alt="Pandan Niaga fire and rescue archive photo 1" loading="lazy"><span>01</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/DSC05035.JPG" aria-label="View photo 2 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/DSC05035.JPG" alt="Pandan Niaga fire and rescue archive photo 2" loading="lazy"><span>02</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/IMG_7615.JPG" aria-label="View photo 3 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/IMG_7615.JPG" alt="Pandan Niaga fire and rescue archive photo 3" loading="lazy"><span>03</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/20150427_091058.jpg" aria-label="View photo 4 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/20150427_091058.jpg" alt="Pandan Niaga fire and rescue archive photo 4" loading="lazy"><span>04</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/20150504_161933.jpg" aria-label="View photo 5 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/20150504_161933.jpg" alt="Pandan Niaga fire and rescue archive photo 5" loading="lazy"><span>05</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/20150812_103805.jpg" aria-label="View photo 6 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/20150812_103805.jpg" alt="Pandan Niaga fire and rescue archive photo 6" loading="lazy"><span>06</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/20160509_120327.jpg" aria-label="View photo 7 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/20160509_120327.jpg" alt="Pandan Niaga fire and rescue archive photo 7" loading="lazy"><span>07</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/20150617_125726.jpg" aria-label="View photo 8 of 23"><img src="new picture/20150617_125726.jpg" alt="Pandan Niaga fire and rescue archive photo 8" loading="lazy"><span>08</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/DSC01670.JPG" aria-label="View photo 9 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/DSC01670.JPG" alt="Pandan Niaga fire and rescue archive photo 9" loading="lazy"><span>09</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/DSC02059.JPG" aria-label="View photo 10 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/DSC02059.JPG" alt="Pandan Niaga fire and rescue archive photo 10" loading="lazy"><span>10</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/SSRI3344.JPG" aria-label="View photo 11 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/SSRI3344.JPG" alt="Pandan Niaga fire and rescue archive photo 11" loading="lazy"><span>11</span></button>
+        <button class="gallery-item" type="button" data-full="PICTURE/WEBSITE/Pandan Picture/DSC01503.JPG" aria-label="View photo 12 of 23"><img src="PICTURE/WEBSITE/Pandan Picture/DSC01503.JPG" alt="Pandan Niaga fire and rescue archive photo 12" loading="lazy"><span>12</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/20150811_110316.jpg" aria-label="View photo 13 of 23"><img src="new picture/20150811_110316.jpg" alt="Pandan Niaga fire and rescue archive photo 13" loading="lazy"><span>13</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/20150811_150733.jpg" aria-label="View photo 14 of 23"><img src="new picture/20150811_150733.jpg" alt="Pandan Niaga fire and rescue archive photo 14" loading="lazy"><span>14</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/20160509_120330.jpg" aria-label="View photo 15 of 23"><img src="new picture/20160509_120330.jpg" alt="Pandan Niaga fire and rescue archive photo 15" loading="lazy"><span>15</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/20160509_120415.jpg" aria-label="View photo 16 of 23"><img src="new picture/20160509_120415.jpg" alt="Pandan Niaga fire and rescue archive photo 16" loading="lazy"><span>16</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/DSC00291.JPG" aria-label="View photo 17 of 23"><img src="new picture/DSC00291.JPG" alt="Pandan Niaga fire and rescue archive photo 17" loading="lazy"><span>17</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/DSC02306.JPG" aria-label="View photo 18 of 23"><img src="new picture/DSC02306.JPG" alt="Pandan Niaga fire and rescue archive photo 18" loading="lazy"><span>18</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/IMG_1153.JPG" aria-label="View photo 19 of 23"><img src="new picture/IMG_1153.JPG" alt="Pandan Niaga fire and rescue archive photo 19" loading="lazy"><span>19</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/IMG_20130701_144955.jpg" aria-label="View photo 20 of 23"><img src="new picture/IMG_20130701_144955.jpg" alt="Pandan Niaga fire and rescue archive photo 20" loading="lazy"><span>20</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/IMG_20161027_151219.jpg" aria-label="View photo 21 of 23"><img src="new picture/IMG_20161027_151219.jpg" alt="Pandan Niaga fire and rescue archive photo 21" loading="lazy"><span>21</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/IMG_2415.JPG" aria-label="View photo 22 of 23"><img src="new picture/IMG_2415.JPG" alt="Pandan Niaga fire and rescue archive photo 22" loading="lazy"><span>22</span></button>
+        <button class="gallery-item" type="button" data-full="new picture/IMG_5524.JPG" aria-label="View photo 23 of 23"><img src="new picture/IMG_5524.JPG" alt="Pandan Niaga fire and rescue archive photo 23" loading="lazy"><span>23</span></button>
+      </div>
+    </section>
+    <section class="gallery-catalog-cta"><p>Seen something you want to know more about?</p><a href="product.html">Explore our equipment <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <dialog class="gallery-lightbox" id="imageModal" aria-label="Photo viewer">
+    <button class="gallery-lightbox-close" id="closeGallery" type="button" aria-label="Close photo viewer">×</button>
+    <button class="gallery-lightbox-nav gallery-lightbox-prev" id="previousPhoto" type="button" aria-label="Previous photo">←</button>
+    <figure><img id="enlargedImg" alt=""><figcaption id="galleryCaption"></figcaption></figure>
+    <button class="gallery-lightbox-nav gallery-lightbox-next" id="nextPhoto" type="button" aria-label="Next photo">→</button>
+  </dialog>
+  <footer><h2>Contact</h2><p><strong>Phone:</strong> +603-5122 1310</p><p><strong>Email:</strong> pnsb@pn.com.my</p><p>&copy; Pandan Niaga Sdn. Bhd.</p></footer>
   <script src="javascript/picture.js"></script>
   <script src="javascript/script.js"></script>
 </body>

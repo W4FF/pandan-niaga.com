@@ -1,24 +1,57 @@
-
+document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("enlargedImg");
-  const closeBtn = document.querySelector(".close");
+  const modalImage = document.getElementById("enlargedImg");
+  const caption = document.getElementById("galleryCaption");
+  const closeButton = document.getElementById("closeGallery");
+  const previousButton = document.getElementById("previousPhoto");
+  const nextButton = document.getElementById("nextPhoto");
+  const photos = Array.from(document.querySelectorAll(".gallery-item"));
 
-  document.querySelectorAll(".gallery img").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "flex";
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
+  if (!modal || !modalImage || !caption || !closeButton || !previousButton || !nextButton || photos.length === 0) {
+    return;
+  }
+
+  let currentIndex = 0;
+
+  const showPhoto = (index) => {
+    currentIndex = (index + photos.length) % photos.length;
+    const photo = photos[currentIndex];
+    const image = photo.querySelector("img");
+
+    if (!image) {
+      return;
+    }
+
+    modalImage.src = photo.dataset.full;
+    modalImage.alt = image.alt;
+    caption.textContent = `PHOTO ${String(currentIndex + 1).padStart(2, "0")} / ${String(photos.length).padStart(2, "0")}`;
+  };
+
+  photos.forEach((photo, index) => {
+    photo.addEventListener("click", () => {
+      showPhoto(index);
+      modal.showModal();
+      closeButton.focus();
     });
   });
 
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+  closeButton.addEventListener("click", () => modal.close());
+  previousButton.addEventListener("click", () => showPhoto(currentIndex - 1));
+  nextButton.addEventListener("click", () => showPhoto(currentIndex + 1));
 
-  // Optional: Close modal when clicking outside the image
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.close();
     }
   });
 
+  modal.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      showPhoto(currentIndex - 1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      showPhoto(currentIndex + 1);
+    }
+  });
+});

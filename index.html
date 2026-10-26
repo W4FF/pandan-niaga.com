@@ -3,103 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pandan Niaga Sdn Bhd</title>
-  <!-- External CSS -->
+  <meta name="theme-color" content="#171a1d">
+  <title>About Pandan Niaga | Fire &amp; Rescue Equipment Malaysia</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-  function revealOnScroll() {
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(el => {
-      const windowHeight = window.innerHeight;
-      const elementTop = el.getBoundingClientRect().top;
-      const revealPoint = 100;
-
-      if (elementTop < windowHeight - revealPoint) {
-        el.classList.add('active');
-      } else {
-        el.classList.remove('active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', revealOnScroll);
-  window.addEventListener('load', revealOnScroll); // Trigger on page load too
-</script>
-
 </head>
-<body>
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+<body class="story-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" aria-current="page">About us</a>
+        <a href="product.html">Product</a>
+        <a href="sponsorship.html">Our Principle</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <header class="bg">
-    <h1>Pandan Niaga Sdn. Bhd.</h1>
-    <p>Specialized equipment and gear for professional firefighters.</p>
-  </header>
+  <main>
+    <header class="story-hero">
+      <div class="story-hero-copy">
+        <p class="story-eyebrow"><span></span> Pandan Niaga · Malaysia · Est. 1996</p>
+        <h1>Ready for the<br><em>people who respond.</em></h1>
+        <p>We supply fire, rescue and safety equipment to the teams that protect people and places.</p>
+        <div class="story-hero-actions">
+          <a class="story-button" href="product.html">Explore our equipment <span aria-hidden="true">↗</span></a>
+          <a class="story-scroll-link" href="#our-story">Get to know PNSB <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="story-hero-visual">
+        <img src="PICTURE/WEBSITE/Pandan Picture/IMG_7615.JPG" alt="Fire and rescue crew carrying out a foam equipment demonstration">
+        <div class="story-photo-tag"><span></span> FIRE &amp; RESCUE IN ACTION</div>
+        <span class="story-photo-index">PNSB / FIELD NOTES 01</span>
+      </div>
+      <div class="story-hero-base"><span>EQUIPMENT FOR CRITICAL MOMENTS</span><span>SHAH ALAM, SELANGOR <span aria-hidden="true">↘</span></span></div>
+    </header>
 
-  <section id="history">
-    <h2 class="reveal">Introduction</h2>
-    <p>Pandan Niaga Sdn. Bhd. (PNSB) is a company establish on 5
-th November 1996. The Company had commenced its business
-operation in supplying office supplies and equipment to Government and SemiGovernment agencies in November 1996.
-</p>
-<p>PNSB is a wholly owned by bumiputras and have been registered with the Ministry
-of Finance since March 2001.</p>
-<p>PNSB has diversified its business activities to supplying fire, rescue and safety
-equipment since 1996 to the Government as well as the Private Sector and and is
-registered with Ministry of Finance under the following categories:-</p>
-<ul>
-  <li>Municipal and Military Fire and Rescues Services</li>
-  <li>Airport and Port Fire and Rescue Services</li>
-  <li>Fire Fighting Equipment and System</li>
-  <li>Personal Protective Equipment (PPE) and Related Items</li>
-</ul>
+    <section class="story-intro" id="our-story">
+      <div class="story-intro-heading">
+        <p class="story-eyebrow story-eyebrow--dark"><span></span> Pandan Niaga Sdn. Bhd.</p>
+        <h2>Introduction</h2>
+      </div>
+      <div class="story-intro-copy">
+        <p>Pandan Niaga Sdn. Bhd. (PNSB) is a company establish on 5<sup>th</sup> November 1996. The Company had commenced its business operation in supplying office supplies and equipment to Government and SemiGovernment agencies in November 1996.</p>
+        <p>PNSB is a wholly owned by bumiputras and have been registered with the Ministry of Finance since March 2001.</p>
+        <p>PNSB has diversified its business activities to supplying fire, rescue and safety equipment since 1996 to the Government as well as the Private Sector and and is registered with Ministry of Finance under the following categories:-</p>
+      </div>
+      <ul class="story-category-list">
+        <li>Municipal and Military Fire and Rescues Services</li>
+        <li>Airport and Port Fire and Rescue Services</li>
+        <li>Fire Fighting Equipment and System</li>
+        <li>Personal Protective Equipment (PPE) and Related Items</li>
+      </ul>
+    </section>
 
-<h2 class="reveal">Company's Mission</h2>
-<p>Pandan Niaga Sdn. Bhd. (PNSB) aims to participate in the development of the
-country to achieve the status of an industrialized nation. PNSB has shown that the
-company is capable and competent to developed and grow with the development
-of the country.
-</p>
-<p>The company’s mission are as follows:-</p>
-  <ul>
-    <li>
-      <span class="title">CARE</span><br>
-      <span>we care to maintain professional integrity and we listen and focus on our client’s requirements</span>
-    </li>
-    <li>
-      <span class="title">RESPOND</span><br>
-      <span>we respond to client’s problem with definite solutions</span>
-    </li>
-    <li>
-      <span class="title">DELIVER</span><br>
-      <span>we deliver goods and services to customer based on their cost requirements</span>
-    </li>
-    <li>
-      <span class="title">GUARANTEE</span><br>
-      <span>we guarantee to give levels of excellence on our goods and services</span>
-    </li>
-  </ul>
+    <section class="story-capabilities">
+      <div class="story-capabilities-heading">
+        <div><p class="story-eyebrow story-eyebrow--dark"><span></span> What we support</p><h2>One mission.<br><em>Many moving parts.</em></h2></div>
+        <a class="story-inline-link" href="product.html">Browse all equipment <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="story-capability-grid">
+        <a href="fire_pump.html" class="story-capability-card">
+          <span>01 / WATER SUPPLY</span>
+          <img src="PICTURE/GODIVA/8-5/8-5.jpg" alt="Portable Godiva fire pump">
+          <div><h3>Move water.</h3><p>Portable and vehicle-mounted pump options.</p><span class="story-capability-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="firefighting_nozzle.html" class="story-capability-card">
+          <span>02 / FIRE ATTACK</span>
+          <img src="PICTURE/AKRON/saberjet/2.jpg" alt="AKRON SaberJet firefighting nozzle">
+          <div><h3>Shape the stream.</h3><p>Firefighting nozzles for water delivery.</p><span class="story-capability-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a href="rescue_equipment.html" class="story-capability-card">
+          <span>03 / RESCUE</span>
+          <img src="PICTURE/HolmATRO/CUTTER/cutter.jpg" alt="Holmatro rescue cutter">
+          <div><h3>Make an opening.</h3><p>Rescue, stabilization and access equipment.</p><span class="story-capability-arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div>
+    </section>
 
-  </section>
+    <section class="story-values">
+      <div class="story-values-intro">
+        <p class="story-eyebrow"><span></span> Pandan Niaga Sdn. Bhd.</p>
+        <h2>Company's<br><em>Mission</em></h2>
+        <p>Pandan Niaga Sdn. Bhd. (PNSB) aims to participate in the development of the country to achieve the status of an industrialized nation. PNSB has shown that the company is capable and competent to developed and grow with the development of the country.</p>
+        <p>The company’s mission are as follows:-</p>
+        <a class="story-values-link" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="story-values-interactive">
+        <div class="story-value-tabs" role="tablist" aria-label="PNSB company values">
+          <button type="button" class="story-value-tab is-active" id="valueTabCare" role="tab" aria-selected="true" aria-controls="valuePanel" data-value="care"><span>01</span> Care <span aria-hidden="true">↗</span></button>
+          <button type="button" class="story-value-tab" id="valueTabRespond" role="tab" aria-selected="false" aria-controls="valuePanel" data-value="respond" tabindex="-1"><span>02</span> Respond <span aria-hidden="true">↗</span></button>
+          <button type="button" class="story-value-tab" id="valueTabDeliver" role="tab" aria-selected="false" aria-controls="valuePanel" data-value="deliver" tabindex="-1"><span>03</span> Deliver <span aria-hidden="true">↗</span></button>
+          <button type="button" class="story-value-tab" id="valueTabGuarantee" role="tab" aria-selected="false" aria-controls="valuePanel" data-value="guarantee" tabindex="-1"><span>04</span> Guarantee <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="story-value-panel" id="valuePanel" role="tabpanel" aria-labelledby="valueTabCare" tabindex="0" aria-live="polite">
+          <span class="story-value-panel-number" id="valueNumber">01 / CARE</span>
+          <h3 id="valueTitle">CARE</h3>
+          <p id="valueDescription">we care to maintain professional integrity and we listen and focus on our client’s requirements</p>
+          <a id="valueLink" href="contact.html">Tell us what you need <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-partners">
+      <div><p class="story-eyebrow story-eyebrow--dark"><span></span> Product partners</p><h2>Good tools start<br>with good makers.</h2><p>Meet the equipment brands featured in our product range.</p></div>
+      <a href="sponsorship.html" class="story-inline-link">Meet the brands <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
   <footer>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> +603-5122 1310</p>
-    <p><strong>Email:</strong> pnsb@pn.com.my</p>
+    <h2>Pandan Niaga</h2>
+    <p>Equipment for the people who protect us.</p>
+    <p><strong>Phone:</strong> +603-5122 1310 · <strong>Email:</strong> pnsb@pn.com.my</p>
     <p>&copy; Pandan Niaga Sdn. Bhd.</p>
   </footer>
-
-    <script src="javascript/script.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

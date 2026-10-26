@@ -1,81 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Principle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171a1d">
+  <title>Equipment Brands | Pandan Niaga Sdn. Bhd.</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-logo">PNSB</h2>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">About us</a>
-      <a href="product.html">Product</a>
-      <a href="sponsorship.html">Our Principle</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+<body class="story-page">
+  <nav>
+    <div class="nav-container">
+      <h2 class="nav-logo">PNSB</h2>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About us</a>
+        <a href="product.html">Product</a>
+        <a href="sponsorship.html" aria-current="page">Our Principle</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <header class="bg">
-    <h1>Pandan Niaga Sdn. Bhd.</h1>
-    <p>Specialized equipment and gear for professional firefighters.</p>
-  </header>
+  <main>
+    <header class="partner-hero">
+      <div class="partner-hero-copy">
+        <p class="story-eyebrow"><span></span> Brands across our product range</p>
+        <h1>Meet the makers<br><em>behind the gear.</em></h1>
+        <p>Explore the equipment brands featured in our fire, rescue and safety catalog. Select a brand to see its product area.</p>
+        <a href="#brandDirectory" class="story-button">Explore the brands <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="partner-hero-side">
+        <span class="partner-hero-mark">PNSB<br />EQUIPMENT<br />DIRECTORY</span>
+        <span class="partner-hero-caption"><span></span> FIRE · RESCUE · RESPONSE</span>
+      </div>
+      <div class="story-hero-base"><span>THE BRANDS FEATURED IN OUR RANGE</span><span>FIVE BRANDS <span aria-hidden="true">↘</span></span></div>
+    </header>
 
+    <section class="partner-directory" id="brandDirectory">
+      <div class="partner-directory-heading">
+        <div><p class="story-eyebrow story-eyebrow--dark"><span></span> Equipment directory</p><h2>Choose a brand.<br><em>Explore a category.</em></h2></div>
+        <p>Select any brand to see where its equipment appears in our catalog. Manufacturer links open in a new tab.</p>
+      </div>
+      <div class="partner-layout">
+        <div class="partner-brand-list" role="tablist" aria-label="Equipment brands">
+          <button class="partner-brand is-active" type="button" role="tab" id="brandTabAkron" aria-selected="true" aria-controls="brandPanel" data-brand="akron">
+            <span class="partner-brand-index">01</span><span class="partner-brand-logo"><img src="PICTURE/LOGO/akron-removebg-preview.png" alt=""></span><span class="partner-brand-name">AKRON Brass</span><span class="partner-brand-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="partner-brand" type="button" role="tab" id="brandTabGodiva" aria-selected="false" aria-controls="brandPanel" data-brand="godiva" tabindex="-1">
+            <span class="partner-brand-index">02</span><span class="partner-brand-logo"><img src="PICTURE/LOGO/godiva-removebg-preview.png" alt=""></span><span class="partner-brand-name">GODIVA</span><span class="partner-brand-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="partner-brand" type="button" role="tab" id="brandTabHolmatro" aria-selected="false" aria-controls="brandPanel" data-brand="holmatro" tabindex="-1">
+            <span class="partner-brand-index">03</span><span class="partner-brand-logo"><img src="PICTURE/LOGO/holmatro-removebg-preview.png" alt=""></span><span class="partner-brand-name">HOLMATRO</span><span class="partner-brand-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="partner-brand" type="button" role="tab" id="brandTabNationalFoam" aria-selected="false" aria-controls="brandPanel" data-brand="national-foam" tabindex="-1">
+            <span class="partner-brand-index">04</span><span class="partner-brand-logo"><img src="PICTURE/LOGO/NF-removebg-preview.png" alt=""></span><span class="partner-brand-name">NATIONAL FOAM</span><span class="partner-brand-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="partner-brand" type="button" role="tab" id="brandTabSupplyPlus" aria-selected="false" aria-controls="brandPanel" data-brand="supplyplus" tabindex="-1">
+            <span class="partner-brand-index">05</span><span class="partner-brand-logo"><img src="PICTURE/LOGO/supplyplus-removebg-preview.png" alt=""></span><span class="partner-brand-name">SUPPLY+</span><span class="partner-brand-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
 
-<section>
-  <h2>Our Principle</h2>
-
- <section class="Principle-grid">
-    <div class="principle-card">
-    <a href="https://www.akronbrass.com" target="_blank" rel="noopener noreferrer">
-      <img src="PICTURE/LOGO/akron.jpg" alt="AKRON">
-      <h3>AKRON</h3>   
-    </a>
-    </div>
-
-    <div class="principle-card">
-    <a href="https://www.godiva.co.uk" target="_blank" rel="noopener noreferrer">
-      <img src="PICTURE/LOGO/godiva.jpg" alt="GODIVA">
-      <h3>GODIVA</h3>
-    </a>
-    </div>
-  
-    <div class="principle-card">
-    <a href="https://www.holmatro.com/en/rescue" target="_blank" rel="noopener noreferrer">
-      <img src="PICTURE/LOGO/holmatro.jpg" alt="HOLMATRO">
-      <h3>HOLMATRO</h3>
-    </a>
-    </div>
-
-    <div class="principle-card">
-    <a href="https://www.nationalfoam.com" target="_blank" rel="noopener noreferrer">
-      <img src="PICTURE/LOGO/NF.jpg" alt="NF">
-      <h3>NATIONAL FOAM</h3>
-    </a>
-    </div>
-
-    <div class="principle-card">
-    <a href="https://supplyplus.com" target="_blank" rel="noopener noreferrer">
-      <img src="PICTURE/LOGO/supplyplus.jpg" alt="SUPPLYPLUS">
-      <h3>SUPPLY+</h3>
-    </a>
-    </div>   
+        <article class="partner-brand-panel" id="brandPanel" role="tabpanel" aria-labelledby="brandTabAkron" tabindex="0" aria-live="polite">
+          <div class="partner-panel-logo"><img id="partnerLogo" src="PICTURE/LOGO/akron-removebg-preview.png" alt="AKRON Brass"></div>
+          <span class="partner-panel-category" id="partnerCategory">WATER DELIVERY / FIRE SUPPRESSION</span>
+          <h3 id="partnerTitle">AKRON Brass</h3>
+          <p id="partnerDescription">Browse AKRON firefighting nozzles and monitors, including handline and portable monitor options.</p>
+          <div class="partner-panel-actions">
+            <a class="partner-catalog-link" id="partnerCatalogLink" href="firefighting_nozzle.html">Explore AKRON nozzles <span aria-hidden="true">↗</span></a>
+            <a class="partner-related-link" id="partnerRelatedLink" href="fire_monitor.html" hidden>Explore AKRON monitors <span aria-hidden="true">↗</span></a>
+            <a class="partner-manufacturer-link" id="partnerManufacturerLink" href="https://www.akronbrass.com" target="_blank" rel="noopener noreferrer">Visit manufacturer <span aria-hidden="true">↗</span></a>
+          </div>
+          <span class="partner-panel-index" id="partnerPanelIndex">BRAND 01 / 05</span>
+        </article>
+      </div>
+      <p class="partner-note">Product availability and specifications may vary. Follow manufacturer links for current product information, or contact PNSB to discuss your requirements.</p>
     </section>
 
- </section>
+    <section class="partner-cta">
+      <div><p class="story-eyebrow"><span></span> Need help choosing?</p><h2>Let’s talk equipment.</h2><p>Our team can help you find the right category to explore.</p></div>
+      <a href="contact.html">Talk to PNSB <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
   <footer>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> +603-5122 1310</p>
-    <p><strong>Email:</strong> pnsb@pn.com.my</p>
+    <h2>Pandan Niaga</h2>
+    <p>Equipment for the people who protect us.</p>
+    <p><strong>Phone:</strong> +603-5122 1310 · <strong>Email:</strong> pnsb@pn.com.my</p>
     <p>&copy; Pandan Niaga Sdn. Bhd.</p>
   </footer>
-
   <script src="javascript/script.js"></script>
 </body>
 </html>
